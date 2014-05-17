@@ -1,0 +1,24 @@
+---
+title: "Statistics for and with Physical Scientists"
+author: R Pruim
+date: May 16, 2014
+output:
+  beamer_presentation:
+    colortheme: seahorse
+    theme: Darmstadt
+---
+
+## Some History
+
+  0. Biology asks for feedback on math/stat in lab manual
+    * not a physical science, but got the ball rolling
+  1. Physic Dept. asks for feedback on their data analysis manual
+    * has lead to annual summer conversations
+  2. Creation of new Stats course for Engineers
+    * 2-hour required course, spring sophomore year
+    * taught for 2 years by colleague, 2 years by me
+  3. Creation of home-brewed materials to teach engineers
+    * used this spring for second time
+  4. Interaction with 2 engineers about topics, data, etc.
+
+## 
