@@ -1,0 +1,22 @@
+---
+output: ioslides_presentation
+---
+
+## Welcome
+
+Welcome to 
+
+<center>
+Effective Teaching using R, RStudio, and the MOSAIC Package  
+</center>
+<br>
+
+We will begin shortly.  While you are waiting, we 
+recommend that you set up three browser windows/tabs:
+
+ * This Citrix meeting app
+ 
+ * RStudio (http://acc.calvin.edu:8787, or your own RStudio)
+ 
+ * Our shiny polling app 
+ (http://glimmer.rstudio.com/mosaic/Clickers/)
