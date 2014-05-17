@@ -1,0 +1,2027 @@
+
+Judith Adams,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-301
+		passwd: rstudio-301
+
+===
+jladams@nic.edu
+===
+
+Tonya Adkins,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-302
+		passwd: rstudio-302
+
+===
+tonya.adkins@jwu.edu
+===
+
+Denise Airola,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-303
+		passwd: rstudio-303
+
+===
+dairola@uark.edu
+===
+
+Faisal Alharthi,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-304
+		passwd: rstudio-304
+
+===
+faisal-alharthy@hotmail.com
+===
+
+Ming-Wen An,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-305
+		passwd: rstudio-305
+
+===
+mian@vassar.edu
+===
+
+Steve Austin,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-306
+		passwd: rstudio-306
+
+===
+austin@gatewaycc.edu
+===
+
+Katharine Banner,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-307
+		passwd: rstudio-307
+
+===
+banner@math.montana.edu
+===
+
+Sister Edith Bogue,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-308
+		passwd: rstudio-308
+
+===
+ebogue@css.edu
+===
+
+Gabi Booth,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-309
+		passwd: rstudio-309
+
+===
+boothg@daytonastate.edu
+===
+
+Marc Bourdeau,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-310
+		passwd: rstudio-310
+
+===
+louis.marc.bourdeau@gmail.com
+===
+
+Abra Brisbin,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-311
+		passwd: rstudio-311
+
+===
+abrisbin@gmail.com
+===
+
+Monica Brown,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-312
+		passwd: rstudio-312
+
+===
+mlbrown@stkate.edu
+===
+
+Matt Carlton,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-313
+		passwd: rstudio-313
+
+===
+mcarlton@calpoly.edu
+===
+
+Robert Carver,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-314
+		passwd: rstudio-314
+
+===
+rcarver@stonehill.edu
+===
+
+Catherine Case,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-315
+		passwd: rstudio-315
+
+===
+ccase@ufl.edu
+===
+
+Ramon Castillo,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-316
+		passwd: rstudio-316
+
+===
+castillo_ramon@yahoo.com
+===
+
+Ronnie Catipon,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-317
+		passwd: rstudio-317
+
+===
+catiponr@franklin.edu
+===
+
+Ricardo Ceneviva,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-318
+		passwd: rstudio-318
+
+===
+ceneviva@iesp.uerj.br
+===
+
+Yu-Ping Chang,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-319
+		passwd: rstudio-319
+
+===
+yc73@buffalo.edu
+===
+
+Ian Clough,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-320
+		passwd: rstudio-320
+
+===
+ian.clough@uc.edu
+===
+
+Linda Collins,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-321
+		passwd: rstudio-321
+
+===
+lcollins@uchicago.edu
+===
+
+Darcy Conant,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-322
+		passwd: rstudio-322
+
+===
+dconant@ndm.edu
+===
+
+Bob Conti,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-323
+		passwd: rstudio-323
+
+===
+rconti@my.msmc.edu
+===
+
+Julie Couton,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-324
+		passwd: rstudio-324
+
+===
+julie.couton@huskers.unl.edu
+===
+
+Trilby Cox,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-325
+		passwd: rstudio-325
+
+===
+tlcox@liberty.edu
+===
+
+Carolyn Cuff,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-326
+		passwd: rstudio-326
+
+===
+ccuff@westminster.edu
+===
+
+Frank D'Amico,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-327
+		passwd: rstudio-327
+
+===
+damico@duq.edu
+===
+
+Allison Davidson,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-328
+		passwd: rstudio-328
+
+===
+atdavid@purdue.edu
+===
+
+Gilbert Debrah,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-329
+		passwd: rstudio-329
+
+===
+gilkwaku@gmail.com
+===
+
+Malinda Desjarlais,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-330
+		passwd: rstudio-330
+
+===
+mddesjarlais@mtroyal.ca
+===
+
+Lisa Dierker,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-331
+		passwd: rstudio-331
+
+===
+ldierker@wesleyan.edu
+===
+
+Leslie Dinauer,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-332
+		passwd: rstudio-332
+
+===
+leslie.dinauer@umuc.edu
+===
+
+Bradford Dykes,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-333
+		passwd: rstudio-333
+
+===
+bradford.m.dykes@wmich.edu
+===
+
+Angela Ebeling,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-334
+		passwd: rstudio-334
+
+===
+angela.ebeling@wlc.edu
+===
+
+Rukman Ekanayake,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-335
+		passwd: rstudio-335
+
+===
+rukmanek@gmail.com
+===
+
+Joachim Engel,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-336
+		passwd: rstudio-336
+
+===
+engel@ph-ludwigsburg.de
+===
+
+Sharon Evans,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-337
+		passwd: rstudio-337
+
+===
+Sharon.evans@gpc.edu
+===
+
+Michelle Everson,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-338
+		passwd: rstudio-338
+
+===
+gaddy001@umn.edu
+===
+
+Camille Fairbourn,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-339
+		passwd: rstudio-339
+
+===
+camille.fairbourn@usu.edu
+===
+
+Dora Fletcher,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-340
+		passwd: rstudio-340
+
+===
+Dora.Fletcher@beaufort.k12.sc.us
+===
+
+Steven Foti,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-341
+		passwd: rstudio-341
+
+===
+fotisj@ufl.edu
+===
+
+Gary Fowler,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-342
+		passwd: rstudio-342
+
+===
+fowlergo@gmail.com
+===
+
+John Gabrosek,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-343
+		passwd: rstudio-343
+
+===
+gabrosej@gvsu.edu
+===
+
+John Gambino,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-344
+		passwd: rstudio-344
+
+===
+jgambino@salemstate.edu
+===
+
+Bodapati V. R. Gandhi,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-345
+		passwd: rstudio-345
+
+===
+bvrgandhi@yahoo.com
+===
+
+Alison Gibbs,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-346
+		passwd: rstudio-346
+
+===
+alison.gibbs@utoronto.ca
+===
+
+Terry O. Gibson Jr.,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-347
+		passwd: rstudio-347
+
+===
+tgibso10@utk.edu
+===
+
+Ramon Gomez,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-348
+		passwd: rstudio-348
+
+===
+gomezra@fiu.edu
+===
+
+Steven Grambow,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-349
+		passwd: rstudio-349
+
+===
+steven.grambow@duke.edu
+===
+
+Michael Granaas,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-350
+		passwd: rstudio-350
+
+===
+mgranaas@usd.edu
+===
+
+Kathy Gray,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-351
+		passwd: rstudio-351
+
+===
+klgray@csuchico.edu
+===
+
+Jennifer Green,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-352
+		passwd: rstudio-352
+
+===
+jgreen@montana.edu
+===
+
+Hilary Green,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-353
+		passwd: rstudio-353
+
+===
+hilary.green@mq.edu.au
+===
+
+Joy Hackenbracht,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-354
+		passwd: rstudio-354
+
+===
+jhacken@forsmarshgroup.com
+===
+
+William Hahn,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-355
+		passwd: rstudio-355
+
+===
+hahnw@wbu.edu
+===
+
+Eradah Hamad,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-356
+		passwd: rstudio-356
+
+===
+eradah.hamad@gmail.com
+===
+
+Johanna Hardin,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-357
+		passwd: rstudio-357
+
+===
+jo.hardin@pomona.edu
+===
+
+Leigh M. Harrell-Williams,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-358
+		passwd: rstudio-358
+
+===
+lwilliams146@gsu.edu
+===
+
+Kari Hart,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-359
+		passwd: rstudio-359
+
+===
+khart@ursinus.edu
+===
+
+Larry Hatcher,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-360
+		passwd: rstudio-360
+
+===
+hatcher@svsu.edu
+===
+
+Sean Hegarty,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-361
+		passwd: rstudio-361
+
+===
+sean.hegarty@cengage.com
+===
+
+Sharon Hessney,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-362
+		passwd: rstudio-362
+
+===
+shessney@gmail.com
+===
+
+Melinda Higgins,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-363
+		passwd: rstudio-363
+
+===
+melinda.higgins@emory.edu
+===
+
+Megan Higgs,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-364
+		passwd: rstudio-364
+
+===
+higgs@math.montana.edu
+===
+
+Nicholas Horton,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-365
+		passwd: rstudio-365
+
+===
+nhorton@amherst.edu
+===
+
+Huy Huynh,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-366
+		passwd: rstudio-366
+
+===
+huy.huynh@nd.edu
+===
+
+Chester Ismay,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-367
+		passwd: rstudio-367
+
+===
+ismayc@ripon.edu
+===
+
+Robin Jeffries,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-368
+		passwd: rstudio-368
+
+===
+robin.a.jeffries@gmail.com
+===
+
+Nicole Jinn,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-369
+		passwd: rstudio-369
+
+===
+njinn@vt.edu
+===
+
+Glenn johnson,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-370
+		passwd: rstudio-370
+
+===
+gfj100@psu.edu
+===
+
+Stephanie Jones,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-371
+		passwd: rstudio-371
+
+===
+jonesS10@ohiodominican.edu
+===
+
+Carla Jungquist,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-372
+		passwd: rstudio-372
+
+===
+carlajun@Buffalo.edu
+===
+
+Mary Lou Kandigian,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-373
+		passwd: rstudio-373
+
+===
+mkandigian@ucvts.tec.nj.us
+===
+
+Daniel Kaplan,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-374
+		passwd: rstudio-374
+
+===
+kaplan@macalester.edu
+===
+
+Jennifer Kaplan,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-375
+		passwd: rstudio-375
+
+===
+jkaplan@uga.edu
+===
+
+Michael Kazlow,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-376
+		passwd: rstudio-376
+
+===
+mkazlow@pace.edu
+===
+
+Thomas Kersten,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-377
+		passwd: rstudio-377
+
+===
+kersten103@gmail.com
+===
+
+Sohail Khan,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-378
+		passwd: rstudio-378
+
+===
+so.khan@uwinnipeg.ca
+===
+
+Christina Knudson,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-379
+		passwd: rstudio-379
+
+===
+knud0158@umn.edu
+===
+
+Tiffany Kolba,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-380
+		passwd: rstudio-380
+
+===
+tiffany.kolba@valpo.edu
+===
+
+Jerry Krantz,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-381
+		passwd: rstudio-381
+
+===
+krante26@erau.edu
+===
+
+Shonda Kuiper,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-382
+		passwd: rstudio-382
+
+===
+kuipers@grinnell.edu
+===
+
+Heather Labansat,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-383
+		passwd: rstudio-383
+
+===
+labansat@tarleton.edu
+===
+
+Dai-Trang Le,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-384
+		passwd: rstudio-384
+
+===
+daitrang@stat.ucla.edu
+===
+
+Joo Ann Lee,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-385
+		passwd: rstudio-385
+
+===
+jooannlee@gmail.com
+===
+
+Stephen Lee,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-386
+		passwd: rstudio-386
+
+===
+stevel@uidaho.edu
+===
+
+Catherine Lee,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-387
+		passwd: rstudio-387
+
+===
+Leece2121@gmail.com
+===
+
+Julie Legler,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-388
+		passwd: rstudio-388
+
+===
+legler@stolaf.edu
+===
+
+John Lepanto,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-389
+		passwd: rstudio-389
+
+===
+jlepanto@webassign.net
+===
+
+Pilar Lim,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-390
+		passwd: rstudio-390
+
+===
+plim@its.jnj.com
+===
+
+Kari Lock Morgan,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-391
+		passwd: rstudio-391
+
+===
+kari@stat.duke.edu
+===
+
+Rodney Long,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-392
+		passwd: rstudio-392
+
+===
+Rodney.Long@montgomerycollege.edu
+===
+
+Philip Loud,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-393
+		passwd: rstudio-393
+
+===
+philipdloud@gmail.com
+===
+
+Adam Loy,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-394
+		passwd: rstudio-394
+
+===
+adam.m.loy@lawrence.edu
+===
+
+Andre Mathurin,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-395
+		passwd: rstudio-395
+
+===
+amathurin@bcp.org
+===
+
+Sherryl May,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-396
+		passwd: rstudio-396
+
+===
+smay613@gmail.com
+===
+
+John McGready,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-397
+		passwd: rstudio-397
+
+===
+jmcgrea1@jhu.edu
+===
+
+Elizabeth Moliski,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-398
+		passwd: rstudio-398
+
+===
+elizabeth.moliski@concordia.edu
+===
+
+Aaron Montgomery,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-399
+		passwd: rstudio-399
+
+===
+amontgom@bw.edu
+===
+
+Victor Motta,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-400
+		passwd: rstudio-400
+
+===
+victor.damotta@gmail.com
+===
+
+Jonathan Moyer,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-401
+		passwd: rstudio-401
+
+===
+moyerj@husson.edu
+===
+
+Joe Nolan,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-402
+		passwd: rstudio-402
+
+===
+nolanj1@nku.edu
+===
+
+Marita O'Brien,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-403
+		passwd: rstudio-403
+
+===
+maritaob@yahoo.com
+===
+
+Andrew Okoboi,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-404
+		passwd: rstudio-404
+
+===
+acokoboi@gmail.com
+===
+
+Jason Palmateer,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-405
+		passwd: rstudio-405
+
+===
+jpalmateer@towson.edu
+===
+
+Mohan Pant,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-406
+		passwd: rstudio-406
+
+===
+mpant@uta.edu
+===
+
+Mary Parker,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-407
+		passwd: rstudio-407
+
+===
+mparker@austincc.edu
+===
+
+Steve Patch,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-408
+		passwd: rstudio-408
+
+===
+patch@unca.edu
+===
+
+Pramod Pathak,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-409
+		passwd: rstudio-409
+
+===
+pathakp@stt.msu.edu
+===
+
+Cassandra Pattanayak,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-410
+		passwd: rstudio-410
+
+===
+cpattanayak@wellesley.edu
+===
+
+Dennis Pearl,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-411
+		passwd: rstudio-411
+
+===
+pearl.1@osu.edu
+===
+
+Jie Peng,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-412
+		passwd: rstudio-412
+
+===
+pengjie@sau.edu
+===
+
+Peter Petto,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-413
+		passwd: rstudio-413
+
+===
+ppetto@ppetto.com
+===
+
+Robert Philbin,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-414
+		passwd: rstudio-414
+
+===
+rphilbin@stat.tamu.edu
+===
+
+Dean Poeth,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-415
+		passwd: rstudio-415
+
+===
+poethd@uniongraduatecollege.edu
+===
+
+Michael Posner,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-416
+		passwd: rstudio-416
+
+===
+michael.posner@villanova.edu
+===
+
+Randall Pruim,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-417
+		passwd: rstudio-417
+
+===
+rpruim@calvin.edu
+===
+
+Tiantian Qin,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-418
+		passwd: rstudio-418
+
+===
+tqin@purdue.edu
+===
+
+Eric Reid,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-419
+		passwd: rstudio-419
+
+===
+ereid@methacton.org
+===
+
+Matt Rissler,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-420
+		passwd: rstudio-420
+
+===
+matthew.rissler@loras.edu
+===
+
+Jane Robertson,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-421
+		passwd: rstudio-421
+
+===
+robj@vt.edu
+===
+
+Johnson Roger,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-422
+		passwd: rstudio-422
+
+===
+roger.johnson@sdsmt.edu
+===
+
+Andrew Ross,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-423
+		passwd: rstudio-423
+
+===
+aross15@emich.edu
+===
+
+Kim Roth,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-424
+		passwd: rstudio-424
+
+===
+roth@juniata.edu
+===
+
+Lisa Rowe,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-425
+		passwd: rstudio-425
+
+===
+lmrowe@itt-tech.edu
+===
+
+William Roweton,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-426
+		passwd: rstudio-426
+
+===
+wroweton@csc.edu
+===
+
+Nilupa Rupasinghe,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-427
+		passwd: rstudio-427
+
+===
+dushmantharupasinghe@gmail.com
+===
+
+Paula Russo,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-428
+		passwd: rstudio-428
+
+===
+paula.russo@trincoll.edu
+===
+
+Abdoulaye Sarr,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-429
+		passwd: rstudio-429
+
+===
+layesarr@voila.fr
+===
+
+Joseph Scazzero,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-430
+		passwd: rstudio-430
+
+===
+jscazzero@emich.edu
+===
+
+Bonnie Schroeder,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-431
+		passwd: rstudio-431
+
+===
+schroeder.1@osu.edu
+===
+
+Sarah Sellke,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-432
+		passwd: rstudio-432
+
+===
+ssellke@purdue.edu
+===
+
+Kyle Siegrist,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-433
+		passwd: rstudio-433
+
+===
+siegrist@math.uah.edu
+===
+
+Elena Skouratova,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-434
+		passwd: rstudio-434
+
+===
+elena.skouratova@concordia.edu
+===
+
+Justin Slauson,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-435
+		passwd: rstudio-435
+
+===
+slauson.4@osu.edu
+===
+
+Laura Smallwood,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-436
+		passwd: rstudio-436
+
+===
+laura.smallwood@cgc.edu
+===
+
+Gary Sneddon,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-437
+		passwd: rstudio-437
+
+===
+gary.sneddon@msvu.ca
+===
+
+Melissa Sovak,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-438
+		passwd: rstudio-438
+
+===
+sovak@calu.edu
+===
+
+Bradley Thiessen,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-439
+		passwd: rstudio-439
+
+===
+bradthiessen@gmail.com
+===
+
+Måns Thulin,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-440
+		passwd: rstudio-440
+
+===
+thulin@math.uu.se
+===
+
+Andrew Tierman,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-441
+		passwd: rstudio-441
+
+===
+tierman@svsu.edu
+===
+
+Gerko Vink,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-442
+		passwd: rstudio-442
+
+===
+g.vink@uu.nl
+===
+
+Jennifer Violette,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-443
+		passwd: rstudio-443
+
+===
+violettej11@students.ecu.edu
+===
+
+David Vlieger,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-444
+		passwd: rstudio-444
+
+===
+vlieger@nwmissouri.edu
+===
+
+Yong Wang,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-445
+		passwd: rstudio-445
+
+===
+yong.wang@eku.edu
+===
+
+Xiaofei Wang,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-446
+		passwd: rstudio-446
+
+===
+xiaofei.wang@yale.edu
+===
+
+Ann Watkins,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-447
+		passwd: rstudio-447
+
+===
+ann.watkins@csun.edu
+===
+
+Heather Waugh,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-448
+		passwd: rstudio-448
+
+===
+hwaugh@shawnee.edu
+===
+
+Leigh Weiss,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-449
+		passwd: rstudio-449
+
+===
+lweiss@capital.edu
+===
+
+Mark Werner,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-450
+		passwd: rstudio-450
+
+===
+mwerner@uga.edu
+===
+
+Douglas Whitaker,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-451
+		passwd: rstudio-451
+
+===
+whitaker@ufl.edu
+===
+
+Homer White,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-452
+		passwd: rstudio-452
+
+===
+hwhite0@georgetowncollege.edu
+===
+
+Chris Wild,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-453
+		passwd: rstudio-453
+
+===
+c.wild@auckland.ac.nz
+===
+
+Jeff Witmer,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-454
+		passwd: rstudio-454
+
+===
+jeff.witmer@oberlin.edu
+===
+
+David Zeitler,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-455
+		passwd: rstudio-455
+
+===
+zeitlerd@gvsu.edu
+===
+
+Wei Zhuang,
+
+Here is your login information for access to the RStudio Server at Calvin
+
+
+		   URL: http://acc.calvin.edu:8787
+		userid: rstudio-456
+		passwd: rstudio-456
+
+===
+VivianZhuang@creighton.edu
