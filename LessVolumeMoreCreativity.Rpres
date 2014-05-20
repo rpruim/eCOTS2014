@@ -1,0 +1,461 @@
+
+Focusing on R Essentials
+========================================================
+author: Randy Pruim
+date: eCOTS 2014
+
+<style type="text/css">
+span.boxed {
+  border:5px solid gray;
+  border-radius:10px;
+  padding: 5px;
+}
+span.invboxed {
+  border:5px solid gray;
+  padding: 5px;
+  border-radius:10px;
+  color: white;
+}
+table, td, th
+{
+border:0px;
+}
+</style>
+
+## Less Volume, More Creativity
+
+Less Volume, More Creativity
+========================================================
+
+```{r echo=FALSE }
+require(mosaic)
+trellis.par.set(theme=col.mosaic())
+require(knitr)
+opts_chunk$set(size='small')
+options(width=90)
+```
+
+```{r echo=FALSE}
+require(knitr)
+opts_chunk$set( 
+  fig.width=8, 
+  fig.height=3,
+  out.width=800,
+  out.height=300
+  )
+```
+
+
+<table><tr align="top"><td width="20%" align="top">
+<img src="images/MikeMcCarthy.jpg" align="top" width="200"></td>
+<td align="top"> A lot of times you end up putting in a lot more volume, because you are teaching fundamentals  and you are teaching concepts that you need to put in, but you may not necessarily use because they are building blocks for other concepts and variations that will come off of that ... In the offseason you have a chance to take a step back and tailor it more specifically towards your  team and towards your players." 
+<br><br>
+Mike McCarthy, Head Coach, Green Bay Packers 
+</td>
+</tr>
+</table>
+
+                                          
+SIBKIS
+========================================================
+
+<table>
+<tr>
+<td>
+Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away. 
+<br><br>
+--- Antoine de Saint-Exupery (writer, poet, pioneering aviator)
+</td>
+<td width="20%"> 
+<img src="images/SaintExupery.jpg">
+</tr>
+</table>
+
+Less Volume, More Creativity
+=================
+
+One key to successfully introducing R is finding a set of commands that is
+
+ * **small**: fewer is better
+ * **coherent**:  commands should be as similar as possible
+ * **powerful**: can do what needs doing 
+ 
+It is not enough to use R, it must be used elegantly.
+
+The **mosaic** package offers one way to do this.
+
+ * [Minimal R Vignette](https://github.com/rpruim/mosaic/raw/master/inst/doc/MinimalR-vignette.pdf#page=2)
+
+A few little details
+====================
+
+### R is case sensitive
+ * many students are *not* case sensitive
+
+### Arrows and Tab
+ * up/down arrows scroll through history
+ * TAB completion can simplify typing
+
+### If all else fails, try ESC
+ * If you see a + prompt, it means R is waiting for more input
+ * If this is unintentional, you probably have a typo
+ * ESC will get you pack to the command prompt
+
+The Most Important R Template
+========================================================
+&nbsp;
+
+<center>
+<h2><strong><span class="invboxed">goal</span> ( <span class="invboxed">yyy</span> ~ <span class="invboxed">xxx</span> , data = <span class="invboxed">mydata</span> )</strong> 
+</h2></center>
+
+&nbsp;
+
+The Most Important R Template
+========================================================
+&nbsp;
+
+<center>
+<h2><strong><span class="boxed">goal</span> ( <span class="boxed">&nbsp;y&nbsp;</span> ~ <span class="boxed">&nbsp;x&nbsp;</span> , data = <span class="boxed">mydata</span> )</strong> 
+</h2></center>
+ 
+The Most Important R Template
+========================================================
+&nbsp;
+
+<center>
+<h2><strong><span class="boxed">goal</span> ( <span class="boxed">&nbsp;y&nbsp;</span> ~ <span class="boxed">&nbsp;x&nbsp;</span> , data = <span class="boxed">mydata</span> , ...)</strong> 
+</h2></center>
+&nbsp;
+
+### Simpler version:  
+ * `goal( ~ x, data = mydata )`
+
+&nbsp;
+### Fancier version: 
+ * `goal( y ~ x | z , data = mydata )`
+ 
+&nbsp;
+### Unified version: 
+ * `goal( formula , data = mydata )`
+
+2 Questions
+========================================================
+&nbsp;
+<center>
+<h2><strong><span class="boxed">goal</span> ( <span class="boxed">&nbsp;y&nbsp;</span> ~ <span class="boxed">&nbsp;x&nbsp;</span> , data = <span class="boxed">mydata</span> )</strong> 
+</h2></center>
+ 
+&nbsp;
+
+
+###  What do you want R to do?  (goal)
+
+&nbsp;
+ 
+###  What must R know to do that?  
+
+
+2 Questions
+========================================================
+&nbsp;
+<center>
+<h2><strong><span class="boxed">goal</span> ( <span class="boxed">&nbsp;y&nbsp;</span> ~ <span class="boxed">&nbsp;x&nbsp;</span> , data = <span class="boxed">mydata</span> )</strong> 
+</h2></center>
+ 
+&nbsp;
+
+
+###  What do you want R to do?  (goal)
+ * This determines the function to use 
+ 
+
+
+###  What must R know to do that?  
+ * This determines the inputs to the function
+ * Must identify the variables and data frame
+
+How do we make this plot?
+=========================
+```{r fig.width=8, fig.height=3, out.height=400, fig.align="center", echo=FALSE}
+xyplot( births ~ dayofyear, data=Births78) 
+```
+
+How do we make this plot?
+=========================
+```{r fig.width=8, fig.height=3.0, out.height=400, fig.align="center", echo=FALSE, out.width="60%", out.height="35%"}
+xyplot( births ~ dayofyear, data=Births78) 
+```
+
+### What is the Goal?
+
+* 
+
+### What does R need to know?
+
+ * 
+ * 
+
+How do we make this plot?
+=========================
+```{r fig.width=8, fig.height=3.0, out.height=400, fig.align="center", echo=FALSE, out.width="60%", out.height="35%"}
+xyplot( births ~ dayofyear, data=Births78) 
+```
+
+### What is the Goal?
+
+* a scatter plot
+
+### What does R need to know?
+
+ * which variable goes where  
+ * which data set
+
+How do we make this plot?
+=========================
+&nbsp;
+<center>
+<h2><strong><span class="boxed">goal</span> ( <span class="boxed">&nbsp;y&nbsp;</span> ~ <span class="boxed">&nbsp;x&nbsp;</span> , data = <span class="boxed">mydata</span> )</strong> 
+</h2></center>
+
+&nbsp;
+<center>
+<h2><strong><span class="boxed">xyplot</span> ( <span class="boxed">&nbsp;births&nbsp;</span> ~ <span class="boxed">&nbsp;dayofyear&nbsp;</span> , data = <span class="boxed">Births78</span> )</strong> 
+</h2></center>
+```{r fig.width=8, fig.height=3.0, out.height=400, fig.align="center", echo=FALSE}
+xyplot( births ~ dayofyear, data=Births78) 
+```
+
+Your turn: How do you make this plot?
+=========
+
+```{r echo=FALSE, fig.height=2.5}
+bwplot( age ~ substance, data=HELPrct, xlab="substance")
+```
+
+### Two Questions?
+
+Your turn: How do you make this plot?
+=========
+
+```{r echo=FALSE, fig.height=2.5}
+bwplot( age ~ substance, data=HELPrct, xlab="substance" )
+```
+
+The data: <code>HELPrct</code>
+
+Variables: <code>age</code>, <code>substance</code>
+
+Command: <code>bwplot()</code>
+
+<strong>Raise your hand when you have created this plot</strong>
+
+Your turn: How do you make this plot?
+=========
+
+```{r echo=TRUE, fig.height=2.5}
+bwplot( age ~ substance, data=HELPrct)
+```
+
+Your turn: How about this one?
+=========
+
+```{r echo=FALSE, fig.height=2.5}
+bwplot( substance ~ age, data=HELPrct)
+```
+
+<strong>Raise your hand when you have created this plot.</strong>
+Your turn: How about this one?
+=========
+
+```{r echo=TRUE, fig.height=2.5}
+bwplot( substance ~ age, data=HELPrct )
+```
+
+
+Graphical Summaries: One Variable
+========================================================
+```{r fig.width=8, fig.height=3, out.height=400, fig.align="center"}
+histogram( ~ age, data=HELPrct) 
+```
+
+Note: When there is **one variable** it is on 
+the **right side** of the formula.
+
+Graphical Summaries: Overview
+========================================================
+
+### One Variable
+```{r eval=FALSE, tidy=FALSE}
+  histogram( ~age, data=HELPrct ) 
+densityplot( ~age, data=HELPrct ) 
+     bwplot( ~age, data=HELPrct ) 
+     qqmath( ~age, data=HELPrct ) 
+freqpolygon( ~age, data=HELPrct ) 
+   bargraph( ~sex, data=HELPrct )
+```
+
+### Two Variables
+
+```{r eval=FALSE, tidy=FALSE}
+xyplot(  i1 ~ age,       data=HELPrct ) 
+bwplot( age ~ substance, data=HELPrct ) 
+bwplot( substance ~ age, data=HELPrct ) 
+```
+
+ *  **i1** average number of drinks (standard units) consumed per day, in the past 30 days (measured at baseline)
+
+
+The Graphics Template
+========================================================
+
+<center>
+<h3><strong><span class="boxed">plotname</span> ( <span class="boxed">&nbsp;y&nbsp;</span> ~ <span class="boxed">&nbsp;x&nbsp;</span> , data = <span class="boxed">mydata</span> , ...)</strong> 
+</h3></center>
+<center>
+&nbsp;
+
+<h3><strong><span class="boxed">plotname</span> ( 
+~ <span class="boxed">&nbsp;x&nbsp;</span> , data = <span class="boxed">mydata</span> , ...)</strong> 
+</h3></center>
+
+&nbsp;
+
+### One variable
+ * `histogram()`,  `qqmath()`,  `densityplot()`, `freqpolygon()`, `bargraph()` 
+
+### Two Variables
+ * `xyplot()`, `bwplot()`
+
+Your turn
+========================================================
+Create a plot of your own choosing with one of these data sets
+```{r eval=FALSE}
+names(KidsFeet)    # 4th graders' feet
+?KidsFeet
+```
+```{r eval=FALSE}
+names(Utilities)   # utility bill data
+?Utilities
+```
+```{r eval=FALSE}
+names(NHANES)      # body shape, etc.
+?NHANES
+```
+
+<strong>Raise your hand when you have made a plot or two.</strong>
+
+*Type a question if you have trouble.*
+
+groups and panels
+========================================================
+
+ * Add `groups = `<span class="invboxed">group</span> to overlay.
+ * Use `y ~ x | z` to create multipanel plots.
+
+```{r fig.width=8, fig.height=3, out.height=400, fig.align="center", tidy=FALSE}
+densityplot( ~ age | sex, data=HELPrct,  
+               group=substance,  
+               auto.key=TRUE)   
+```
+
+Bells & Whistles
+================
+
+ * titles
+ * axis labels
+ * colors
+ * sizes
+ * transparency
+ * etc, etc.
+ 
+My approach: 
+ * Let the students ask or 
+ * Let the data analysis drive 
+
+Numerical Summaries: One Variable
+========================================================
+
+Big idea:
+ * replace plot name with summary name
+ * nothing else changes
+```{r fig.show='hold', out.height="30%"}
+histogram( ~ age, data=HELPrct )
+     mean( ~ age, data=HELPrct )
+```
+
+Other Summaries
+===
+The mosaic package includes formula aware versions of
+`mean()`,
+`sd()`,
+`var()`,
+`min()`,
+`max()`,
+`sum()`,
+`IQR()`, ...
+
+Also provides `favstats` to computer our favorites.
+```{r}
+favstats( ~ age, data=HELPrct )
+```
+
+Tallying 
+=======
+
+```
+tally( ~ sex, data=HELPrct)
+```
+
+Numerical Summaries: Two Variables
+========================================================
+```{r}
+sd( age ~ substance, data=HELPrct )
+```
+
+Numerical Summaries: Tables
+========================================================
+```{r}
+tally( sex ~ substance, data=HELPrct )
+tally( ~ sex + substance, data=HELPrct )
+```
+
+Numerical Summaries
+========================================================
+```{r echo=FALSE}
+HELPrct <- transform(HELPrct, sex=factor(sex, labels=c('F','M')),
+                     substance = factor(substance, labels=c('Alc', 'Coc', 'Her')))
+```
+```{r size='small'}
+mean( age ~ substance | sex, data=HELPrct )
+```
+```{r echo=FALSE}
+rm(HELPrct)
+data(HELPrct)
+```
+ * Also works for `median()`, `min()`, `max()`, `sd()`, `var()`, `favstats()`, etc.
+
+Linear Models
+========================================================
+```{r}
+lm( age ~ 1, data=HELPrct )
+```
+Linear Models
+========================================================
+```{r}
+lm( age ~ sex, data=HELPrct )
+```
+Linear Models
+========================================================
+```{r}
+lm( age ~ substance + sex, data=HELPrct )
+```
+
+A couple more things
+========================================================
+
+
+```{r}
+do(1) * lm(age ~ sex, data=HELPrct)
+do(3) * lm( age ~ shuffle(sex), data=HELPrct )
+```
