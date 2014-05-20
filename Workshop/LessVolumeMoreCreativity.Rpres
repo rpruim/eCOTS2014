@@ -25,7 +25,7 @@ border:0px;
 ## Less Volume, More Creativity
 
 Less Volume, More Creativity
-========================================================
+================================
 
 ```{r echo=FALSE }
 require(mosaic)
@@ -56,8 +56,8 @@ Mike McCarthy, Head Coach, Green Bay Packers
 </table>
 
                                           
-SIBKIS
-========================================================
+SIBKIS: See It Big, Keep It Simple
+=======================
 
 <table>
 <tr>
@@ -102,7 +102,7 @@ A few little details
  * ESC will get you pack to the command prompt
 
 The Most Important R Template
-========================================================
+===============================
 &nbsp;
 
 <center>
@@ -112,7 +112,7 @@ The Most Important R Template
 &nbsp;
 
 The Most Important R Template
-========================================================
+===============================
 &nbsp;
 
 <center>
@@ -120,7 +120,7 @@ The Most Important R Template
 </h2></center>
  
 The Most Important R Template
-========================================================
+=========================================
 &nbsp;
 
 <center>
@@ -140,7 +140,7 @@ The Most Important R Template
  * `goal( formula , data = mydata )`
 
 2 Questions
-========================================================
+============
 &nbsp;
 <center>
 <h2><strong><span class="boxed">goal</span> ( <span class="boxed">&nbsp;y&nbsp;</span> ~ <span class="boxed">&nbsp;x&nbsp;</span> , data = <span class="boxed">mydata</span> )</strong> 
@@ -157,7 +157,7 @@ The Most Important R Template
 
 
 2 Questions
-========================================================
+==============
 &nbsp;
 <center>
 <h2><strong><span class="boxed">goal</span> ( <span class="boxed">&nbsp;y&nbsp;</span> ~ <span class="boxed">&nbsp;x&nbsp;</span> , data = <span class="boxed">mydata</span> )</strong> 
@@ -189,7 +189,7 @@ xyplot( births ~ dayofyear, data=Births78)
 
 ### What is the Goal?
 
-* 
+ * 
 
 ### What does R need to know?
 
@@ -328,7 +328,7 @@ The Graphics Template
  * `xyplot()`, `bwplot()`
 
 Your turn
-========================================================
+==============================================
 Create a plot of your own choosing with one of these data sets
 ```{r eval=FALSE}
 names(KidsFeet)    # 4th graders' feet
@@ -355,7 +355,7 @@ groups and panels
 
 ```{r fig.width=8, fig.height=3, out.height=400, fig.align="center", tidy=FALSE}
 densityplot( ~ age | sex, data=HELPrct,  
-               group=substance,  
+               groups=substance,  
                auto.key=TRUE)   
 ```
 
@@ -395,7 +395,7 @@ The mosaic package includes formula aware versions of
 `sum()`,
 `IQR()`, ...
 
-Also provides `favstats` to computer our favorites.
+Also provides `favstats()` to compute our favorites.
 ```{r}
 favstats( ~ age, data=HELPrct )
 ```
@@ -403,59 +403,76 @@ favstats( ~ age, data=HELPrct )
 Tallying 
 =======
 
-```
+```{r}
 tally( ~ sex, data=HELPrct)
+tally( ~ substance, data=HELPrct)
 ```
 
 Numerical Summaries: Two Variables
-========================================================
-```{r}
-sd( age ~ substance, data=HELPrct )
+===========================================
+Three ways to think about this.  All do the same thing.
+```{r,eval = FALSE}
+sd(   age ~ substance, data=HELPrct )
+sd( ~ age | substance, data=HELPrct )
+sd( ~ age, groups=substance, data=HELPrct )
+```
+```{r, echo=FALSE}
+sd( ~ age, groups=substance, data=HELPrct )
 ```
 
 Numerical Summaries: Tables
-========================================================
+=============================================
 ```{r}
 tally( sex ~ substance, data=HELPrct )
 tally( ~ sex + substance, data=HELPrct )
 ```
 
 Numerical Summaries
-========================================================
+====================================
 ```{r echo=FALSE}
 HELPrct <- transform(HELPrct, sex=factor(sex, labels=c('F','M')),
-                     substance = factor(substance, labels=c('Alc', 'Coc', 'Her')))
+                     substance = factor(substance, labels=c('A', 'C', 'H')))
 ```
 ```{r size='small'}
-mean( age ~ substance | sex, data=HELPrct )
+mean( age ~ substance | sex, data=HELPrct,  )
 ```
 ```{r echo=FALSE}
 rm(HELPrct)
 data(HELPrct)
 ```
+ * I've abbreviated the names to make things fit on slide
  * Also works for `median()`, `min()`, `max()`, `sd()`, `var()`, `favstats()`, etc.
 
+One Template to Rule a Lot
+==========================
+
+ * single and multiple variable graphical summaries
+ * single and multiple variabble numerical summaries
+ * linear models
+```{r eval=FALSE}
+  mean( age ~ sex, data=HELPrct )
+bwplot( age ~ sex, data=HELPrct ) 
+    lm( age ~ sex, data=HELPrct )
+```
+
+```{r echo=FALSE}
+  mean( age ~ sex, data=HELPrct )
+    coef(lm( age ~ sex, data=HELPrct ))
+```
+ * We will return to modeling shortly.
+
+Some other things
+=================
+The `mosaic` package includes some other things, too
+ * Data sets (you've already seen some of them)
+ * xtras: `xchisq.test()`, `xpnorm()`, `xqqmath()`
+ * `mPlot()` -- interactive plot design
+ * simplified ways to add onto lattice plots
+ 
 Linear Models
-========================================================
+==============================
 ```{r}
 lm( age ~ 1, data=HELPrct )
 ```
-Linear Models
-========================================================
-```{r}
-lm( age ~ sex, data=HELPrct )
-```
-Linear Models
-========================================================
-```{r}
-lm( age ~ substance + sex, data=HELPrct )
-```
-
-A couple more things
-========================================================
 
 
-```{r}
-do(1) * lm(age ~ sex, data=HELPrct)
-do(3) * lm( age ~ shuffle(sex), data=HELPrct )
-```
