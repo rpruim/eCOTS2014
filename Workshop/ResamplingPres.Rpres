@@ -1,0 +1,158 @@
+Resampling with mosaic
+======================
+date: eCOTS 2014
+---
+
+```{r echo=FALSE }
+require(mosaic)
+trellis.par.set(theme=col.mosaic())
+require(knitr)
+opts_chunk$set(size='small', cache=TRUE)
+options(width=90)
+set.seed(12345)
+```
+
+```{r echo=FALSE}
+require(knitr)
+opts_chunk$set( 
+  fig.width=8, 
+  fig.height=3,
+  out.width=800,
+  out.height=300,
+  fig.align="center"
+  )
+```
+Lady Tasting Tea
+================
+ * Often used on first day of class
+ * Story
+   * woman claims she can tell whether milk
+   has been poured into tea or vice versa.
+   * Question: How do we test this claim?
+
+Lady Tasting Tea
+================
+ * Often used on first day of class
+ * Story
+   * woman claims she can tell whether milk
+   has been poured into tea or vice versa.
+   * Question: How do we test this claim?
+     * Have her taste some tea prepared each way<br> (Flip a coin to decide which way.)
+     * How many cups? (Let's try 10.)
+     * How do we evaluate her score?
+
+Physical Simulation
+===================
+
+* Have students guess a sequence of 10 heads and tails.
+
+* Flip a coin 10 times and compare.
+
+* Before the reveal, ask students
+  * What do you expect your score to be?
+  * What do you think the best score in the class will be?
+  * Is a perfect score possible just by guessing? Likely?
+  * What about 9 out of 10?
+
+Computer Simulation
+===================
+Use `rflip()` to simulate flipping coins
+```{r}
+rflip()
+```
+
+Computer Simulation
+===================
+Faster if we flip multiple coins at once:
+```{r} 
+rflip(10)
+```
+ * easier to consider `heads` = correct; `tails` = incorrect than to compare with a given pattern
+   * this switch bothers me more than it bothers my students
+
+Let's do that a lot of times
+============================
+`rflip(10)` simulates 1 lady tasting 10 cups 1 time.
+
+We can do that many times to see how guessing ladies do:
+```{r}
+do(2) * rflip(10)
+```
+
+ * `do()` is clever about what it remembers
+ * 2 isn't many -- we'll do many next.
+
+The distribution of guessing ladies
+===================================
+
+```{r}
+Ladies <- do(5000) * rflip(10)
+head(Ladies, 1)
+histogram( ~ heads, data=Ladies, width=1 )
+```
+
+How often does guessing score 9 or 10?
+=============================================
+
+```{r}
+tally( ~(heads >= 9) , data=Ladies)
+tally( ~(heads >= 9) , data=Ladies, 
+                       format="prop")
+ prop( ~(heads >= 9), data=Ladies)
+```
+
+A general approach to randomization
+===================================
+
+ 1. Do it for your data
+ 2. Do it for "random" data
+ 3. Do it lots of times for "random" data
+ 
+ * definition of "random" is important, but can
+ often be handled by `shuffle()` or `resample()`
+
+Example: Do mean ages differ by sex?
+====================================
+```{r}
+diffmean(age ~ sex, data=HELPrct)
+do(1) * 
+  diffmean(age ~ shuffle(sex), data=HELPrct)
+Null <- do(5000) * 
+  diffmean(age ~ shuffle(sex), data=HELPrct)
+```
+
+Example: Do mean ages differ by sex?
+====================================
+
+```{r}
+prop( ~(abs(diffmean) > 0.7841), data=Null )
+histogram(~ diffmean, data=Null, v=-.7841) 
+```
+
+Example:  Bootstrap for difference in means
+========================================
+
+```{r}
+Bootstrap <- do(5000) * 
+  diffmean(age~sex, data= resample(HELPrct))
+
+histogram( ~diffmean, data=Bootstrap, 
+                      v=-.7841, glwd=4 )
+```
+
+Example:  CI for difference in mean ages
+========================================
+```{r}
+cdata(~diffmean, data=Bootstrap, p=.95)
+confint(Bootstrap, method="quantile")
+confint(Bootstrap)  # default uses st. err
+```
+
+
+Randomization and linear models
+=================================
+
+```{r}
+do(1) * lm(age ~ sex, data=HELPrct)
+do(3) * lm( age ~ shuffle(sex), data=HELPrct )
+```
