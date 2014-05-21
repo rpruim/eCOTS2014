@@ -96,6 +96,20 @@ How often does guessing score 9 or 10?
 
 ```{r}
 tally( ~(heads >= 9) , data=Ladies)
+```
+
+How often does guessing score 9 or 10?
+=============================================
+
+```{r}
+tally( ~(heads >= 9) , data=Ladies, 
+                       format="prop")
+```
+
+How often does guessing score 9 or 10?
+=============================================
+
+```{r}
 tally( ~(heads >= 9) , data=Ladies, 
                        format="prop")
  prop( ~(heads >= 9), data=Ladies)
@@ -145,14 +159,48 @@ Example:  CI for difference in mean ages
 ```{r}
 cdata(~diffmean, data=Bootstrap, p=.95)
 confint(Bootstrap, method="quantile")
-confint(Bootstrap)  # default uses st. err
 ```
 
+Example:  CI for difference in mean ages
+========================================
+```{r}
+confint(Bootstrap)  # default uses st. err
+```
 
 Randomization and linear models
 =================================
 
 ```{r}
-do(1) * lm(age ~ sex, data=HELPrct)
-do(3) * lm( age ~ shuffle(sex), data=HELPrct )
+do(1) * lm(width ~ length, data=KidsFeet)
+do(3) * lm( width ~ shuffle(length), data=KidsFeet)
+```
+
+Randomization and linear models
+=================================
+
+```{r}
+do(1) * 
+  lm(width ~ length + sex, data=KidsFeet)
+do(3) * 
+  lm( width ~ length + shuffle(sex), 
+                       data=KidsFeet)
+```
+
+
+Randomization and linear models
+=================================
+```{r}
+Null <- do(5000) * 
+  lm( width ~ length + shuffle(sex), 
+                       data=KidsFeet)
+histogram( ~ sexG, data=Null, 
+           v=-0.2325, glwd=4)
+```
+
+Randomization and linear models
+=================================
+```{r}
+histogram( ~ sexG, data=Null, 
+           v=-0.2325, glwd=4)
+prop( ~ (sexG <= -0.2325), data=Null )
 ```
