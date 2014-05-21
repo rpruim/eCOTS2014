@@ -467,6 +467,7 @@ The `mosaic` package includes some other things, too
  * Data sets (you've already seen some of them)
  * xtras: `xchisq.test()`, `xpnorm()`, `xqqmath()`
  * `mPlot()` -- interactive plot design
+ * simplified `histogram()` controls (e.g., `width`)
  * simplified ways to add onto lattice plots
  
 Linear Models
