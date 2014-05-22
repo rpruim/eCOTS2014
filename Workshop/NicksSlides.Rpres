@@ -1,0 +1,260 @@
+Introduction and Overview
+==================================================
+author: Nicholas Horton, Randall Pruim, and Danny Kaplan
+date: eCOTS 2014
+
+<style type="text/css">
+span.boxed {
+  border:5px solid gray;
+  border-radius:10px;
+  padding: 5px;
+}
+span.invboxed {
+  border:5px solid gray;
+  padding: 5px;
+  border-radius:10px;
+  color: white;
+}
+table, td, th
+{
+border:0px;
+}
+</style>
+
+## Effective Teaching using R, RStudio and the mosaic package
+
+Effective Teaching using R, RStudio and the mosaic package
+================================
+
+Plan for today:
+
+ * **Welcome**: introductions and overview
+ 
+ * **Vignettes and related resources**: guide to additional materials
+
+ * **Intro to RStudio**: the basics
+ 
+ * **Less Volume, More Creativity**: making R and RStudio more accessible to students and instructors
+ 
+Effective Teaching using R, RStudio and the mosaic package
+================================
+
+Plan for today (continued):
+  * **More modeling using mosaic**: simplifying the ability to understand and interpret models
+  
+  * **Resampling using mosaic**: implementing randomization-based inference (bootstrap and permutation tests)
+  
+  * **Additional RStudio topics**: ways to facilitate development of materials
+  
+  * **Feedback and discussion**: please submit questions as they arise
+
+
+
+```{r echo=FALSE }
+require(mosaic)
+trellis.par.set(theme=col.mosaic())
+require(knitr)
+opts_chunk$set(size='small')
+options(width=90)
+```
+
+```{r echo=FALSE}
+require(knitr)
+opts_chunk$set(
+  fig.width=8,
+  fig.height=3,
+  out.width=800,
+  out.height=300
+  )
+```
+Workshop website
+================
+
+Welcome to the "Effective Teaching using R, RStudio and the mosaic package" workshop. As we gather, please check out: http://mosaic-web.org/ecots2014/workshop/
+for useful information related to the workshop.  This has pointers to the RStudio server that you have access to, vignettes, and other information.  
+
+Please also open a browser window for: http://glimmer.rstudio.com/mosaic/Clickers/ 
+
+If you want to follow along in RStudio, also open a browser window to: http://acc.calvin.edu:8787 (use the login and password provided earlier)
+
+When questions arise, please submit them to the "Questions" box in the webinar software.
+
+Acknowledgements
+=================
+
+We wanted to start by acknowledging:
+
+ * **CAUSE**: for putting together an amazing conference
+ 
+Acknowledgements
+=================
+
+We wanted to start by acknowledging:
+
+ * **CAUSE**: for putting together an amazing conference
+ * **NSF**: DUE 0920350  for support of Project MOSAIC
+
+Acknowledgements
+=================
+
+We wanted to start by acknowledging:
+
+ * **CAUSE**: for putting together an amazing conference
+ * **NSF**: DUE 0920350  for support of Project MOSAIC
+ * **R and RStudio community**: many people who have made R and RStudio what they are
+ 
+Introductions 
+=================
+
+ * **Randall Pruim** (Calvin College)
+
+Introductions 
+=================
+
+ * **Randall Pruim** (Calvin College)
+ * **Danny Kaplan** (Macalester College)
+ 
+Introductions 
+=================
+
+ * **Randall Pruim** (Calvin College)
+ * **Danny Kaplan** (Macalester College)
+ * **Nicholas Horton** (Amherst College)
+ 
+A bit about you 
+=================
+
+We've prepared a number of polling questions to get a sense of who you are.  
+
+Please open up a separate browser window at the following URL: 
+
+http://glimmer.rstudio.com/mosaic/Clickers/ 
+              
+Motivation 
+=================
+
+**Project MOSAIC** (http://www.mosaic-web.org) is an NSF funded initiative to create a community of educators to develop a new way to introduce mathematics, statistics, computation and modeling to students in colleges and universities (Kaplan PI)
+
+Motivation 
+=================
+
+**Our goal**: Provide a broader approach to quantitative studies that provides better support for work in science and technology. The focus of the project is to tie together better diverse aspects of quantitative work that students in science, technology, and engineering will need in their professional lives, but which are today usually taught in isolation, if at all.
+
+Motivation
+==================
+The name MOSAIC reflects the first letters — M, S, C, C — of key components of a quantitative education:
+* **Modeling**: The ability to create, manipulate and investigate useful and informative mathematical representations of a real-world situations
+* **Statistics**: The analysis of variability that draws on our ability to quantify uncertainty and to draw logical inferences from observations and experiment
+* **Computation**: The capacity to think algorithmically, to manage data on large scales, to visualize and interact with models, and to automate tasks for efficiency, accuracy, and reproducibility
+* **Calculus**: The traditional mathematical entry point  
+
+Motivation
+==================
+
+* Big data (or even medium data) is not going to be analyzed on TI calculators
+* How do we build the capacity to make sense of the data around us?
+* We need to start early (and make powerful technologies available to students and instructors)
+* Our approach: make it easier to use R and RStudio (free software: less barriers)
+
+
+Vignettes and related resources
+==================
+
+To  facilitate use of R and RStudio and the mosaic package for the teaching of statistics, we have created a number of online resources.
+
+These can be found at the Vignettes link at http://cran.r-project.org/web/packages/mosaic (or see the workshop webpage at http://mosaic-web.org/ecots2014/workshop)
+
+We welcome comments and suggestions for any of these materials (which are distributed under a Creative Commons Remix with Attribution License)
+
+
+Vignettes and related resources
+==================
+We will refer to these resources throughout the workshop.
+* **mosaic-resources**: pdf file with links to other resources 
+* **MinimalR**: a minimal set of commands needed to teach using R and RStudio
+* **Compendium**: a compendium of commands to teach an intro stats course
+* **Resampling**: how to undertake randomization-based inference using R
+* **Modeling**: a strategy for teaching modeling in intro stats using R
+
+
+Vignettes and related resources (cont.)
+==================
+Other materials may be useful for examples or working code snippets
+* **Sleuth**: provides the code and output for the 2nd and 3rd editions of the Statistical Sleuth
+* **IPS**: provides the code and output for the 6th edition of Introduction to the Practice of Statistics
+* **Lock5**: provides the code and output for Statistics: Unlocking the Power of Data (in process)
+* **fastR**: Pruim's Foundations and Applications of Statistics: An Introduction using R
+* **Fresh Approach**: Kaplan's 2nd edition of Statistical Modeling: A Fresh Approach
+
+Motivating example (HELP study)
+==================
+We will be using data from the Health Evaluation and Linkage to Primary (HELP) care randomized clinical trial (RCT) throughout this workshop (and in some of the vignettes):
+* n=470 subjects without primary care enrolled in detox in Boston circa 2000
+* followed for up to 2 years, every six months
+* rich set of measures of behaviors, demographics and outcomes
+* pdf of questionnaire available at http://www.amherst.edu/~nhorton/help
+* more info available using "?HELPrct" after loading the mosaic packagen (see also HELPfull)
+
+Intro to R and RStudio
+==================
+* **R**: free software environment for statistical computing and graphics (http://r-project.org)
+* **RStudio**: powerful and easy-to-use free and open source user interface for R (http://www.rstudio.com)
+
+RStudio is available as a client or server (Linux based) interface.  You have access to an RStudio server through Calvin College.  
+
+We find that this *dramatically* simplifies the use of RStudio in the first few weeks of a class.
+
+Intro to R and RStudio
+==================
+
+Let's take a quick tour of the RStudio interface...
+
+
+Why use the mosaic package?
+==================
+
+R (or its predecessor S) has been around for 30 years.  Why do we now need the mosaic package?
+
+Why use the mosaic package?
+==================
+
+R (or its predecessor S) has been around for 30 years.  Why do we now need the mosaic package?
+
+* simplify the learning curve  (round off the rough edges)
+* base R is now essentially frozen (so packages are even more important)
+* scaffold their use of computing using the powerful concept of a modeling language (main focus for today)
+
+(Some) highlights of mosaic
+==================
+* favstats()
+* xpnorm()
+* xchisq.test()
+* googleMap()   (see also [STEW](http://www.amstat.org/education/stew/) activity "Roadless USA")
+* rgeo()
+* fetchGapminder1()
+* fetchGoogle()
+* Cards
+
+
+Workflows in RStudio
+==================
+There are a number of ways to work in RStudio:
+* Console
+* Scripts
+* Markdown (this is what we recommend)
+
+Markdown in RStudio
+==================
+See Mine's presentation from Monday for more info (or read paper at http://escholarship.org/uc/item/90b2f5xh)
+
+Improved support in the Preview release
+* outputs directly to pdf
+* can be reformatted
+* more later (as part of Danny's discussion of ways to create materials and share with students)
+
+
+Next Up: Less Volume, More Creativity
+==============================
+
+Any questions?  Please submit them as you think of them to the webinar software panel.
+

@@ -1,0 +1,376 @@
+---
+title: "Modeling and Math"
+date: "ECOTS R Workshop: May 21, 2014"
+output: html_document
+---
+
+```{r include=FALSE}
+require(mosaic)
+require(ggplot2)
+```
+
+## In Brief
+
+The `mosaic` package provides facilities for putting model fitting into a "mathematical function" framework.
+
+* Works with the workhorse `lm()` and `glm()`
+* `mosaic::fitModel()` provides a named-parameter interface to fitting, both linear and nonlinear.
+* Functions are easy and familiar to evaluate.
+* `xyplot()` and `mosaic::plotFun()` allow students to display the model functions over the data.
+
+### Use with lm( ), glm( )
+
+#### Example: 
+
+Mortality at 20 years of follow-up for smokers and non-smokers.
+
+```{r include=FALSE}
+set.seed(32)
+```
+```{r}
+sample( Whickham, size=5 )
+```
+
+```{r}
+smod <- glm( outcome=='Alive' ~ age*smoker, family='binomial',
+             data=Whickham)
+f <- makeFun(smod) # EXTRACT THE FUNCTION
+```
+
+Evaluation ... For a 60-year old ...
+```{r}
+f( age=60, smoker=c('Yes'))
+``` 
+
+### Plot data and the functional form
+```{r}
+xyplot( outcome=='Alive' ~ age | smoker, data=Whickham,
+        pch=20, alpha=.2 )
+
+plotFun( f(age=age, smoker="No") ~ age, add=TRUE)
+plotFun( f(age=age, smoker="Yes") ~ age, add=TRUE, 
+         col='red', lwd=2)
+```
+
+### lm()
+
+```{r}
+hmod <- lm( height ~ father, data=subset(Galton,sex=="M"))
+```
+
+Extract the function ... just like `resid( )` or `fitted( )` 
+```{r}
+hfun <- makeFun(hmod)
+```
+
+Plot it ... first data, then the function.
+```{r}
+xyplot(height ~ father | sex, data=Galton)
+plotFun( hfun(x) ~ x, add=TRUE)
+```
+
+### Multiple variables:
+```{r}
+mod2 <- lm( height ~ father + sex, data=Galton)
+hfun2 <- makeFun(mod2)
+xyplot(height ~ father | sex, data=Galton)
+plotFun( hfun2(x, sex="F") ~ x, add=TRUE)
+plotFun( hfun2(x, sex="M") ~ x, add=TRUE, col='red')
+```
+
+Or ...
+```{r}
+mod3 <- lm( height ~ father*mother + sex, data=Galton)
+hfun3 <- makeFun(mod3)
+plotFun( hfun3(father=x, mother=y, sex="F") ~ x&y,
+         x.lim=c(60,80),y.lim=c(57,73)) 
+plotPoints( mother ~ father, data=Galton, add=TRUE,
+            pch=20,col='red')
+```
+
+## Confidence Intervals
+
+```{r}
+hfun2( father=66, sex=c('M','F'), interval='confidence')
+hfun2( father=66, sex=c('M','F'), interval='prediction')
+```
+
+## NOTE: ggplot( ) does this well.
+
+```{r}
+ggplot(data=Galton, aes(x=father, y=height)) + geom_point()  + 
+  aes(colour=sex)  + stat_smooth(method=lm) + 
+  theme(legend.position="none") + labs(title="") 
+```
+
+Convenient interface via `mosaic:mPlot()`.
+
+![mplot](Figures/mPlot.png)
+
+## Not so brief introduction
+One of the objectives of Project MOSAIC is to make connections between statistics and mathematics and computation.  The `mosaic` package offers some features specifically oriented to doing math.  
+
+These are suggestions or demonstrations appropriate in teaching statistical modeling to students not afraid of math, e.g. engineers, statistics minors, ...
+
+```{r}
+f <- makeFun( 3*x + 2 ~ x)
+```
+Read this as, "make a function `f` that takes $x$ as a input and produces $3x + 2$ as the output. 
+
+Evaluating the function is a matter of providing an input:
+```{r}
+f(4)
+```
+It's easy to plot functions:
+```{r}
+plotFun( 3*x + 2 ~ x, x.lim=range(-5,5) )
+```
+
+Or, if we already have the function `f`, give $x$ as an input:
+```{r results="hide"}
+plotFun( f(x) ~ x, x.lim=range(-5,5) )
+```
+
+Functions of multiple variables follow the same scheme:
+```{r}
+g <- makeFun( 3*x*y + 2*x -4*y +2 ~ x&y)
+g(x=0,y=2)
+plotFun( g(x=x,y=y)~x&y, 
+         x.lim=range(-2,2),y.lim=range(-2,2) )
+```
+Or even cross-sections or parametrically ...
+```{r}
+plotFun( g(x=x, y=0.5) ~ x, x.lim=range(-2,2) )
+plotFun( g(x=3*cos(t),y=sin(t))~ t, t.lim=range(-5,5))
+```
+
+Why is this relevant to statistical modeling?
+
+* Fitted functions are the same kind of thing as functions specified algebraically.
+* We specify the form of the function, and let the computer do 
+* Students can compare the fitted function to ones that are "nearby" 
+* Using functions explicitly provides a transition from what students know about math to what they need to know about statistics.
+
+## Statistical Conventions
+
+The workhorses of model building in R are `lm()` and `glm()`.  They are great, but unfortunately they return values that are not what students are used to.
+
+In particular, students are used to lines expressed as $y = m x + b$, etc.
+
+`lm()` gives back something different, e.g.
+```{r results='hide'}
+lm( height ~ father, data=Galton )
+```
+```{r echo=FALSE}
+coef( lm(height ~ father, data=Galton ))
+```
+
+How different this is from $mx+b$.
+
+* Where's the $+$?
+* Where's the $x$?
+* Where's the $y$?
+
+And then, what happens when you plot a model ...
+```{r}
+m = lm( height ~ father, data=Galton )
+plot(m)
+```
+
+## Where lm( ) shines
+
+The `lm()` function was written by statisticians for statisticians.  Confidence intervals and p-values are easy:
+
+```{r}
+coef(summary(m))
+```
+
+
+`lm()` is particularly valuable when there are multiple explanatory variables.
+
+```{r}
+m2 <- lm( height ~ sex + father + mother, data=Galton)
+coef(summary(m2))
+```
+
+## Overcoming the Differences
+
+One strategy is to start with what students already know, and build on that.
+
+1. Remind students that it's really $y(x) = mx + b$: $y$ is a function of $x$.  There are two variables involved. 
+2. Point out that $x$ and $y$ are simply names for variables.  
+    * We could write, e.g. $z(t)  = mt + b$.  
+    * One more step takes us to mnemonic variable names, the height of a child taken as a function of the father's height (as Galton put it).
+        ```height(father) = m * father + b```
+3. Then introduce function fitting in the context of the function `height(father)`:
+    * There's some data: `Galton` in this case.
+    * Variable names are set by the data:
+        ```{r}
+names(Galton)
+```
+    * We don't expect the child's height to be exactly $=$, only approximately.  So `height(father) ~ m * father + b`
+4. And do the fitting:
+    ```{r}
+f <- fitModel( height ~ m*father + b, data=Galton)
+```
+
+You plot this the same way as "mathematical" functions:
+```{r}
+plotFun( f(father=x)~x, x.lim=range(60,80) )
+```
+
+If you want to talk about residuals, least squares, etc, you can do so. For instance, have students guess the function before fitting it ...
+```{r}
+xyplot( height ~ father, data=Galton)
+myGuess <- makeFun(40 + .35*x ~ x )
+plotFun( myGuess(x) ~ x, add=TRUE, col='red')
+plotFun( f(father=x) ~ x, add=TRUE, col='green')
+```
+
+Which is better?
+```{r}
+mean( (myGuess(father)-height)^2, data=Galton )
+mean( (f(father) - height)^2, data=Galton)
+```
+
+Students can explore these questions:
+
+* Why take the square?
+* Oh ... why couldn't you take the absolute value?
+    - Ans: You could.
+
+
+
+
+```{r}
+f0 <- fitModel(height ~ a, data=Galton)
+f1 <- fitModel(height ~ a + b*father, data=Galton)
+f2 <- fitModel(height ~ a + b*father + c*father^2, data=Galton)
+
+xyplot( height ~ father, data=Galton)
+plotFun( f0(father=x)~x, add=TRUE)
+plotFun( f1(father=x)~x, add=TRUE, col='red')
+plotFun( f2(father=x)~x, add=TRUE, col='green')
+```
+
+Which function is better?  (Hint: it doesn't depend on the data!)
+```{r}
+mean( (f0(father)-height)^2, data=Galton )
+mean( (f1(father)-height)^2, data=Galton )
+mean( (f2(father)-height)^2, data=Galton )
+```
+
+### lm( )  makes a function.  
+
+It just isn't packaged as such.  We can do so with `mosaic::makeFun()`
+```{r}
+m1 <- lm( height ~ father, data=Galton)
+g1 <- makeFun(m1)
+g1( father=65 )
+```
+
+### Functions with more than 1 input
+
+While we're at it ... 
+
+Let's do what Galton never could: Include women!
+
+And we can take a liberal view about how the child came to be: the father and the mother multiplying:
+
+```{r}
+mod <- lm( height ~ sex + father*mother, data=Galton )
+f <- makeFun( mod )
+f( sex='F', father=65, mother=65 )
+plotFun( f(sex='M', father=x, mother=y) ~ x & y, 
+         x.lim=range(60,80), y.lim=range(60,80))
+```
+
+* What does the function look like without the interaction?
+* What if you include the child's sex as an interaction?
+
+### Functions more generally
+
+```{r}
+g <- smoother( height ~ father, data=Galton, degree=1 )
+xyplot(height ~ father, data=Galton) 
+plotFun( g(father=x)~x, add=TRUE, lwd=3 )
+plotFun( f1(father=x)~x, add=TRUE, col='red', 
+         lwd=3, alpha=.5)
+```
+
+Where the data are, the two functions are basically the same.
+
+## Modeling probabilities
+
+Example: Mortality at 20 years of follow-up for smokers and non-smokers.
+
+```{r include=FALSE}
+set.seed(32)
+```
+```{r}
+sample( Whickham, size=5 )
+```
+
+### A $\chi^2$-test?  Really?
+```{r}
+counts <- tally( ~ outcome & smoker, data=Whickham )
+chisq.test( counts )
+```
+
+And what's the effect size?  In what direction?
+
+### Conditional Probabilities
+
+```{r}
+tally( outcome ~ smoker, data=Whickham )
+```
+
+Really?  Smokers had a larger chance of surviving?
+
+### Models can include covariates
+
+Just as there are smoothers, there are function types suited to Dead/Alive outcomes ... e.g. logistic regression.
+
+```{r}
+smod <- glm( outcome=='Alive' ~ age*smoker, family='binomial',
+             data=Whickham)
+f <- makeFun(smod)
+```
+
+For a 60-year old ...
+```{r}
+f( age=60, smoker=c('Yes','No'))
+``` 
+A function is a function, whatever the form!
+
+```{r}
+xyplot( outcome=='Alive' ~ age | smoker, data=Whickham,
+        pch=20, alpha=.2 )
+
+plotFun( f(age=age, smoker="No") ~ age, add=TRUE)
+plotFun( f(age=age, smoker="Yes") ~ age, add=TRUE, 
+         col='red', lwd=2)
+```
+
+### Inference
+
+```{r cache=TRUE}
+actual <- lm(height ~ father+sex, data=Galton)
+f <- makeFun( actual )
+plotFun(f(x, sex='F')~x, x.lim=range(65,80))
+# Confidence interval?
+for (k in 1:50) {
+  trial <- lm(height ~ father+sex, data=resample(Galton) )
+  f <- makeFun( trial )
+  print(plotFun(f(x, sex='F')~x, add=TRUE, col='blue', alpha=.5))
+  1
+  }
+# Null Hypothesis?
+for (k in 1:10) {
+  trial <- lm(height ~ father+shuffle(sex), data=Galton )
+  f <- makeFun( trial )
+  print(plotFun(f(x, sex='F')~x, add=TRUE, col='red', alpha=.5))
+  1
+  }
+```
+

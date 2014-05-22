@@ -1,0 +1,34 @@
+---
+title: "example for workshop"
+output: pdf_document
+---
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r message=FALSE}
+require(mosaic); options=3
+trellis.par.set(theme=col.mosaic(bw=FALSE))
+```
+
+```{r}
+favstats(age ~ treat, data=HELPrct)
+bwplot(age ~ treat, data=HELPrct)
+t.test(age ~ treat, data=HELPrct)
+```
+
+```{r}
+xpnorm(1.96, mean=0, sd=1)
+```
+
+```{r}
+tally(~ homeless + sex, data=HELPrct)
+xchisq.test(tally(~ homeless + sex, data=HELPrct))
+```
+
+```{r}
+googleMap(40.7566, -73.9863, radius=1)   # Times Square
+set.seed(42)
+googleMap(position=rgeo(1), radius=1)   # not Times Square
+```

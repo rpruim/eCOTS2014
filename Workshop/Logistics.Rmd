@@ -1,0 +1,231 @@
+---
+title: "Logistics of Teaching with R"
+date: "ECOTS Workshop, May 22, 2014"
+output: html_document
+---
+```{r include=FALSE}
+require(mosaic)
+require(devtools)
+```
+
+Every course we teach has logistics.  The way we handle logistics has changed over time. 
+
+**Logistics Techniques**
+
+* Lecture / blackboard for broadcasting information
+* Mimeograph -> Photocopy for providing a syllabus, etc.
+* Floppy disks, "H: drive" for distributing files
+* Computer lab machines -> student-owned laptops
+* Links to HTML files 
+* Course specific web sites
+* Course support software (e.g. Moodle)
+
+Many old-time techniques are still good, but some of them are not well suited to teaching with computation and not well integrated with R.
+
+## Logistical Needs
+
+Here are some basic areas needed for just about every R-based class.  
+
+1. Providing R
+#. Distributing data files
+#. Distributing class notes
+#. Distributing R commands
+
+These same areas apply to other software: JMP, Python, Matlab, Mathematica, etc.
+
+## Providing R
+
+Some Options:
+
+* Install R/RStudio on lab machines
+* Install R/RStudio on student machines
+* Use an R/RStudio server
+
+### Many beginning students: Use a server
+
+Every student has a Facebook account, so they already have access to the hardware they need.
+
+#### Advantages
+
+- No student set up
+- Everyone has exactly the same interface
+- Dogs can't possible eat their computer.
+- Students can share their account with you --- you can see what's wrong to help them.
+- Update of version and packages is centralized
+
+#### Disadvantages
+
+- Possible load problems 
+    - Hundreds of students simultaneously in class
+    - Thousands of students asynchronously
+- Working with your IT Department.  Some are great, others have limited resources.
+    - Work-around, as necessary.  A server can be set up on the Cloud, e.g. Amazon Web Services.  Good documentation of process for sys-admins. 
+    
+## Distributing Data Files
+
+* Students download files and use basic R functions to read them in, e.g. `read.csv()`
+* Give students links to data files on web server.  Again, use the basic R functions, e.g.
+    ```{r results='hide'}
+read.csv("http://dl.dropboxusercontent.com/u/5098197/StatisticalModeling/mydata1.csv")
+    ```
+* Functions for reading in files with short names, e.g. `mosaic::fetchData()`
+* Existing packages, e.g. `data(Galton, package='mosaic')`
+* Shared, editable files (e.g. for group projects)
+
+and even ...
+
+* Your own package for your own course.
+
+### Students Download Files
+
+**Problems**
+
+* Students may not put files where they should.
+* Uploading files to RStudio Server can be confusing.  Students don't understand that the server is another machine running another operating system.
+* Students will use the wrong R function.
+* Updating is a nightmare.
+
+**Advantages**
+
+NONE
+
+## Links to Data Files on Web Server
+
+Of course, that's how you would distribute files for download.
+
+Rather than posting a link to the file, post the **command** for reading in the file to the current data session.
+
+```{r}
+todaysData <- read.csv(file="http://dl.dropboxusercontent.com/u/5098197/StatisticalModeling/mydata1.csv")
+```
+
+
+Students cut-and-paste the command from course web site to their R session.
+
+**TIPS**
+
+Make sure the protocol is `http://`, not `https://`
+
+Use tinyurl.com` to translate your long URL to a short one.
+```{r}
+fetchData("http://tinyurl.com/q9pbn7t")
+```
+
+**Advantages**
+
+* Easy to find, use, and to update data.
+* Posting command minimizes possibilities for typing mistakes.
+* Many datasets already on book sites, e.g. Lock^5
+
+
+## Functions for reading in files with short names
+
+Set up a web repository for files.  Write a function that looks up short names on that repository.
+
+Example:
+```{r}
+G <- mosaic::fetchData("Dome.csv")
+```
+
+**Advantages**
+
+* Easy to use new data sets in class: one step process
+
+**Disadvantages**
+
+* Writing such a function is not trivial for newbies
+* `mosaic::fetchData()` doesn't automatically connect to **your** repository, just the `mosaic` one.
+
+
+## Existing Packages
+
+Packages are the standard way for distributing R software.  They also provide facilities for data, for notes, and for Rmd templates.
+
+The data set you want to use may already exist in a CRAN or other package.
+
+Command to access the data:
+
+* Loaded packages : e.g. `data(Galton)` or sometimes just `Galton`
+* Installed but unloaded packages: `data(BOD, package='datasets')`
+
+Finding the data you want:
+
+* Look at packages on CRAN etc.  Get list by naming the package, e.g. 
+```
+data(package='datasets')
+```
+There are thousands of datasets available.
+
+## Shared, Simultaneously Editable Data
+
+For student project collaborations, or ...
+
+When collecting data from the class, let the students enter it for you.
+
+* A nice way to teach about the organization of data.  You can see and show the class as it's being mis-entered.
+
+### Google Spreadsheets
+
+1. Create the blank spreadsheet.  You **must** use this link to your Google account: <https://g.co/oldsheets>
+2. Enter as much of the data or format as you want.
+3. Permit anyone with the link to edit ...
+    ![sharing](Figures/GoogleShare.png)
+3. Post that link on your web page so students can get to the file:
+<https://docs.google.com/spreadsheet/ccc?key=0Am13enSalO74dFBPVVZyTndFWlBndVVVSmpENGpPRFE&usp=sharing>
+    - Go to `tinyurl.com` if you want to translate your link to a smaller form.  Here's this one: <http://tinyurl.com/pgwlljs> 
+3. "Publish" the spreadsheet to the web.  (File/Publish to Web)
+4. Get the link for the file in CSV format.
+    ![Google publish](Figures/GooglePublish.png)
+5. Post that link/command. Use `mosaic::fetch`, e.g.
+```{r}
+require(mosaic)
+ECOTS <- fetchGoogle("https://docs.google.com/spreadsheet/pub?key=0Am13enSalO74dFBPVVZyTndFWlBndVVVSmpENGpPRFE&single=true&gid=0&output=csv")
+```
+
+## Your own R Package
+
+It's not hard to make a simple R package.  Include your data in the `data` directory of the package.
+
+Example:
+* The sources <https://github.com/dtkaplan/ECOTS-ICOTS-2014/tree/master/ECOTS/CourseR>
+* Installation via
+    ```{r eval=FALSE}
+require(devtools)
+install_github("dtkaplan/ECOTS-ICOTS-2014/ECOTS/CourseR")
+help(dataDocExample)
+```
+
+## Distributing Class Notes
+
+Use R/Markdown to write notes.
+
+Options:
+
+* Publish the notes to Rpubs.com and post link on your website
+    - Example: <http://rpubs.com/dtkaplan/ecots-modeling>
+    - Example: <http://rpubs.com/dtkaplan/ECOTS-logistics>
+* Keep the html files on your web server.  
+    Even better: Keep the sources there so that the notes will be updated automatically when you change them.
+    Even better: Keep your RStudio Project on the web server. 
+* Use an RStudio project linked to GitHub.  This is very powerful, but has a steep learning curve.
+
+## Distributing R Commands
+
+Suggestion: Use R Markdown and distribute the commands just like your class notes.  Give a link to the `.Rmd` file.
+
+Have students copy and paste from their browser into the RStudio editor, and use "Chunks/Run All".  That will source the code.
+
+### Emerging Techniques
+
+RStudio has "templates."  These are currently distributed from packages.
+
+From the `CourseR` package.
+![Templates](Figures/Templates.png)
+
+## Time for a Teach-with-R package
+
+Make it easy for instructors to set up the logistics.
+
+Interested in helping?
+
+
