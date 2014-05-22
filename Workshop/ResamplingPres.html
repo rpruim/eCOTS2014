@@ -510,7 +510,7 @@ body {
 }
 
 .reveal .slides section .mediaOnly {
-   position: fixed;
+   position: absolute;
    width: 100%;
    top: 2.5em;
    bottom: 0;
@@ -783,7 +783,7 @@ hljs.initHighlightingOnLoad();
   <div class="reveal">
   <div class="slides">
 
-<section data-state="section" data-transition="linear" data-transition-speed="default">
+<section data-state="section" data-transition="fade" data-transition-speed="default">
 <h1>Resampling with mosaic</h1><p>eCOTS 2014</p>
 
 <div class="column column1 slideContent" >
@@ -796,7 +796,7 @@ hljs.initHighlightingOnLoad();
 </div>
 
 </section>
-<section data-transition="linear" data-transition-speed="default">
+<section data-transition="fade" data-transition-speed="default">
 <h3>Lady Tasting Tea</h3>
 <div class="slideContent" >
 <ul>
@@ -813,7 +813,7 @@ has been poured into tea or vice versa.</li>
 </div>
 
 </section>
-<section data-transition="linear" data-transition-speed="default">
+<section data-transition="fade" data-transition-speed="default">
 <h3>Lady Tasting Tea</h3>
 <div class="slideContent" >
 <ul>
@@ -836,7 +836,7 @@ has been poured into tea or vice versa.</li>
 </div>
 
 </section>
-<section data-transition="linear" data-transition-speed="default">
+<section data-transition="fade" data-transition-speed="default">
 <h3>Physical Simulation</h3>
 <div class="slideContent" >
 <ul>
@@ -855,7 +855,7 @@ has been poured into tea or vice versa.</li>
 </div>
 
 </section>
-<section data-transition="linear" data-transition-speed="default">
+<section data-transition="fade" data-transition-speed="default">
 <h3>Computer Simulation</h3>
 <div class="slideContent" >
 <p>Use <code>rflip()</code> to simulate flipping coins</p>
@@ -874,7 +874,7 @@ Number of Heads: 1 [Proportion Heads: 1]
 </div>
 
 </section>
-<section data-transition="linear" data-transition-speed="default">
+<section data-transition="fade" data-transition-speed="default">
 <h3>Computer Simulation</h3>
 <div class="slideContent" >
 <p>Faster if we flip multiple coins at once:</p>
@@ -901,7 +901,7 @@ Number of Heads: 6 [Proportion Heads: 0.6]
 </div>
 
 </section>
-<section data-transition="linear" data-transition-speed="default">
+<section data-transition="fade" data-transition-speed="default">
 <h3>Let's do that a lot of times</h3>
 <div class="slideContent" >
 <p><code>rflip(10)</code> simulates 1 lady tasting 10 cups 1 time.</p>
@@ -924,7 +924,7 @@ Number of Heads: 6 [Proportion Heads: 0.6]
 </div>
 
 </section>
-<section data-transition="linear" data-transition-speed="default">
+<section data-transition="fade" data-transition-speed="default">
 <h3>The distribution of guessing ladies</h3>
 <div class="mediaInline slideContent" >
 <pre><code class="r">Ladies &lt;- do(5000) * rflip(10)
@@ -943,7 +943,7 @@ head(Ladies, 1)
 </div>
 
 </section>
-<section data-transition="linear" data-transition-speed="default">
+<section data-transition="fade" data-transition-speed="default">
 <h3>How often does guessing score 9 or 10?</h3>
 <div class="slideContent" >
 <pre><code class="r">tally( ~(heads &gt;= 9) , data=Ladies)
@@ -957,7 +957,7 @@ head(Ladies, 1)
 </div>
 
 </section>
-<section data-transition="linear" data-transition-speed="default">
+<section data-transition="fade" data-transition-speed="default">
 <h3>How often does guessing score 9 or 10?</h3>
 <div class="slideContent" >
 <pre><code class="r">tally( ~(heads &gt;= 9) , data=Ladies, 
@@ -972,7 +972,7 @@ head(Ladies, 1)
 </div>
 
 </section>
-<section data-transition="linear" data-transition-speed="default">
+<section data-transition="fade" data-transition-speed="default">
 <h3>How often does guessing score 9 or 10?</h3>
 <div class="slideContent" >
 <pre><code class="r">tally( ~(heads &gt;= 9) , data=Ladies, 
@@ -994,7 +994,7 @@ head(Ladies, 1)
 </div>
 
 </section>
-<section data-transition="linear" data-transition-speed="default">
+<section data-transition="fade" data-transition-speed="default">
 <h3>A general approach to randomization</h3>
 <div class="slideContent" >
 <ol>
@@ -1011,7 +1011,7 @@ often be handled by <code>shuffle()</code> or <code>resample()</code></li>
 </div>
 
 </section>
-<section data-transition="linear" data-transition-speed="default">
+<section data-transition="fade" data-transition-speed="default">
 <h3>Example: Do mean ages differ by sex?</h3>
 <div class="slideContent" >
 <pre><code class="r">diffmean(age ~ sex, data=HELPrct)
@@ -1036,7 +1036,7 @@ often be handled by <code>shuffle()</code> or <code>resample()</code></li>
 </div>
 
 </section>
-<section data-transition="linear" data-transition-speed="default">
+<section data-transition="fade" data-transition-speed="default">
 <h3>Example: Do mean ages differ by sex?</h3>
 <div class="mediaInline slideContent" >
 <pre><code class="r">prop( ~(abs(diffmean) &gt; 0.7841), data=Null )
@@ -1054,7 +1054,7 @@ often be handled by <code>shuffle()</code> or <code>resample()</code></li>
 </div>
 
 </section>
-<section data-transition="linear" data-transition-speed="default">
+<section data-transition="fade" data-transition-speed="default">
 <h3>Example:  Bootstrap for difference in means</h3>
 <div class="mediaInline slideContent" >
 <pre><code class="r">Bootstrap &lt;- do(5000) * 
@@ -1069,7 +1069,7 @@ histogram( ~diffmean, data=Bootstrap,
 </div>
 
 </section>
-<section data-transition="linear" data-transition-speed="default">
+<section data-transition="fade" data-transition-speed="default">
 <h3>Example:  CI for difference in mean ages</h3>
 <div class="slideContent" >
 <pre><code class="r">cdata(~diffmean, data=Bootstrap, p=.95)
@@ -1089,7 +1089,7 @@ histogram( ~diffmean, data=Bootstrap,
 </div>
 
 </section>
-<section data-transition="linear" data-transition-speed="default">
+<section data-transition="fade" data-transition-speed="default">
 <h3>Example:  CI for difference in mean ages</h3>
 <div class="slideContent" >
 <pre><code class="r">confint(Bootstrap)  # default uses st. err
@@ -1102,7 +1102,7 @@ histogram( ~diffmean, data=Bootstrap,
 </div>
 
 </section>
-<section data-transition="linear" data-transition-speed="default">
+<section data-transition="fade" data-transition-speed="default">
 <h3>Randomization and linear models</h3>
 <div class="slideContent" >
 <pre><code class="r">do(1) * lm(width ~ length, data=KidsFeet)
@@ -1124,7 +1124,7 @@ histogram( ~diffmean, data=Bootstrap,
 </div>
 
 </section>
-<section data-transition="linear" data-transition-speed="default">
+<section data-transition="fade" data-transition-speed="default">
 <h3>Randomization and linear models</h3>
 <div class="slideContent" >
 <pre><code class="r">do(1) * 
@@ -1149,7 +1149,7 @@ histogram( ~diffmean, data=Bootstrap,
 </div>
 
 </section>
-<section data-transition="linear" data-transition-speed="default">
+<section data-transition="fade" data-transition-speed="default">
 <h3>Randomization and linear models</h3>
 <div class="mediaInline slideContent" >
 <pre><code class="r">Null &lt;- do(5000) * 
@@ -1164,7 +1164,7 @@ histogram( ~ sexG, data=Null,
 </div>
 
 </section>
-<section data-transition="linear" data-transition-speed="default">
+<section data-transition="fade" data-transition-speed="default">
 <h3>Randomization and linear models</h3>
 <div class="mediaInline slideContent" >
 <pre><code class="r">histogram( ~ sexG, data=Null, 
@@ -1234,7 +1234,7 @@ function commandsForSlide(indexh) {
       rollingLinks: false,
       
       theme: 'simple', 
-      transition: 'linear',
+      transition: 'fade',
       transitionSpeed: 'default',
       rtl: false,
       width: 960,

@@ -1,6 +1,7 @@
 Resampling with mosaic
 ======================
 date: eCOTS 2014
+transition: fade
 ---
 
 ```{r echo=FALSE }
