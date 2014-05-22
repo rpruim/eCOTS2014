@@ -1,0 +1,50 @@
+dplyr Overview
+========================================================
+author: Randall Pruim
+date: eCOTS 2014
+
+The five (six) dplyr commands
+========================================================
+
+ * `filter()`  -- subset of rows
+ * `select()` -- subset of columns
+ * `mutate()` -- add columns to the data
+ * `summarise()` -- reduce data to single row
+ * `arrange()` -- order the data
+
+Really good stuff comes by combining with
+ * `group_by()` -- split that the data into groups
+
+dplyr's Big Ideas
+=================
+The basic operations make sense regardless of how/where the data
+are stored.  
+  * so syntax should be the same for data in memory, in files, in data bases (of various kinds)
+  * reduces cognitive load for human
+  
+Workflow should scale
+ * `dplyr` is clever about avoiding unnecessary work and doing
+ things efficiently on large data
+
+Split-Apply-Combine with dplyr
+=============================
+
+```{r}
+require(dplyr)
+HELPrct %.% 
+  group_by(sex, substance) %.% 
+  summarise(favstats(age))
+```
+
+Same workflow, bigger data
+==========================
+```{r}
+require(hflights)
+dim(hflights)
+Houston <- tbl_df(hflights)  # better sructure for large data
+```
+```{r}
+Houston %.% 
+  group_by(Dest) %.% 
+  summarise(favstats(DepDelay))
+```
