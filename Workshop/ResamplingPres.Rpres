@@ -6,6 +6,15 @@ transition: fade
 
 ## You can do() it.
 
+
+Lady Tasting Tea
+================
+ * Often used on first day of class
+ * Story
+   * woman claims she can tell whether milk
+   has been poured into tea or vice versa.
+   * Question: How do we test this claim?
+   
 ```{r echo=FALSE }
 require(mosaic)
 trellis.par.set(theme=col.mosaic())
@@ -26,14 +35,6 @@ opts_chunk$set(
   )
 ```
 
-Lady Tasting Tea
-================
- * Often used on first day of class
- * Story
-   * woman claims she can tell whether milk
-   has been poured into tea or vice versa.
-   * Question: How do we test this claim?
-   
 
 Lady Tasting Tea
 ================
@@ -90,7 +91,7 @@ do(2) * rflip(10)
 The distribution of guessing ladies
 ===================================
 
-```{r}
+```{r fig.width=8, fig.height=3, out.width=800, out.height=300}
 Ladies <- do(5000) * rflip(10)
 head(Ladies, 1)
 histogram( ~ heads, data=Ladies, width=1 )
@@ -143,7 +144,7 @@ Null <- do(5000) *
 Example: Do mean ages differ by sex?
 ====================================
 
-```{r}
+```{r fig.width=8, fig.height=3, out.width=800, out.height=300}
 prop( ~(abs(diffmean) > 0.7841), data=Null )
 histogram(~ diffmean, data=Null, v=-.7841) 
 ```
@@ -151,7 +152,7 @@ histogram(~ diffmean, data=Null, v=-.7841)
 Example:  Bootstrap for difference in means
 ========================================
 
-```{r}
+```{r fig.width=8, fig.height=3, out.width=800, out.height=300}
 Bootstrap <- do(5000) * 
   diffmean(age~sex, data= resample(HELPrct))
 
@@ -194,7 +195,7 @@ do(3) *
 
 Randomization and linear models
 =================================
-```{r}
+```{r fig.width=8, fig.height=3, out.width=800, out.height=300}
 Null <- do(5000) * 
   lm( width ~ length + shuffle(sex), 
                        data=KidsFeet)
@@ -204,7 +205,7 @@ histogram( ~ sexG, data=Null,
 
 Randomization and linear models
 =================================
-```{r}
+```{r fig.width=8, fig.height=3, out.width=800, out.height=300}
 histogram( ~ sexG, data=Null, 
            v=-0.2325, glwd=4)
 prop( ~ (sexG <= -0.2325), data=Null )
