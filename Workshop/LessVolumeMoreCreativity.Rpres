@@ -3,6 +3,7 @@ Focusing on R Essentials
 ==================================================
 author: Randy Pruim
 date: eCOTS 2014
+transition: fade
 
 <style type="text/css">
 span.boxed {
@@ -469,7 +470,32 @@ The `mosaic` package includes some other things, too
  * `mPlot()` -- interactive plot design
  * simplified `histogram()` controls (e.g., `width`)
  * simplified ways to add onto lattice plots
- 
+
+xpnorm()
+========
+```{r}
+xpnorm( 700, mean=500, sd=100)
+```
+
+xpnorm()
+========
+```{r}
+xpnorm( c(300, 700), mean=500, sd=100)
+```
+
+xchisq.test()
+=============
+
+```{r, echo=FALSE}
+phs <- cbind(c(104,189),c(10933,10845))
+colnames(phs) <- c("heart attack","no heart attack")
+rownames(phs) <- c("aspirin","placebo")
+```
+
+```{r}
+xchisq.test(phs)
+```
+
 Linear Models
 ==============================
 ```{r}
