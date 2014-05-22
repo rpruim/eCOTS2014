@@ -1,8 +1,10 @@
 Resampling with mosaic
 ======================
 date: eCOTS 2014
+author: Randall Pruim
 transition: fade
----
+
+## You can do() it.
 
 ```{r echo=FALSE }
 require(mosaic)
@@ -23,6 +25,7 @@ opts_chunk$set(
   fig.align="center"
   )
 ```
+
 Lady Tasting Tea
 ================
  * Often used on first day of class
@@ -30,6 +33,7 @@ Lady Tasting Tea
    * woman claims she can tell whether milk
    has been poured into tea or vice versa.
    * Question: How do we test this claim?
+   
 
 Lady Tasting Tea
 ================
