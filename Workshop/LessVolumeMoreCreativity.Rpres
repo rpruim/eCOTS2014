@@ -496,10 +496,19 @@ rownames(phs) <- c("aspirin","placebo")
 xchisq.test(phs)
 ```
 
-Linear Models
+Next Up: Modeling 
 ==============================
-```{r}
-lm( age ~ 1, data=HELPrct )
-```
+Modeling is really the starting point for the `mosaic` 
+design.
+
+ * linear models (`lm()` and `glm()`) defined the template
+ * lattice graphics use the template (so we chose lattice)
+ * we added functionality so numerical summaries 
+ can be done with the same template
+ * additional things added to make modeling easier for beginners.
+ 
+ 
+
+
 
 
