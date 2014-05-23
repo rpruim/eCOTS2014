@@ -267,8 +267,14 @@ But Wait, There's More
 
 11 ET today:
 
-### Cassandra Wolos Pattanayak from Wellesley College 
+\begin{center}
+Cassandra Wolos Pattanayak from Wellesley College 
 
-### Reaching Students Outside the Statistics Classroom: 
+\medskip
 
-#### Integrating Statistics into the Coursework and Research Experiences of Non-Statistics Majors
+Reaching Students Outside the Statistics Classroom:
+
+\smallskip
+
+Integrating Statistics into the Coursework and Research Experiences of Non-Statistics Majors
+\end{center}
