@@ -33,7 +33,7 @@ Split-Apply-Combine with dplyr
 require(dplyr)
 HELPrct %.% 
   group_by(sex, substance) %.% 
-  summarise(favstats(age))
+  summarise(meanAge = mean(age))
 ```
 
 Same workflow, bigger data
@@ -46,5 +46,5 @@ Houston <- tbl_df(hflights)  # better sructure for large data
 ```{r}
 Houston %.% 
   group_by(Dest) %.% 
-  summarise(favstats(DepDelay))
+  summarise(meanDelay = mean(DepDelay))
 ```
