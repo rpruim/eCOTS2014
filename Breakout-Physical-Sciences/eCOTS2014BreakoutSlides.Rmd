@@ -262,6 +262,21 @@ So what do we (statisticians) do?
  
     * Let scientists help pick applications
 
+Share your experiences: JMM 2015
+---
+
+Contributed Paper Session:
+
+*Statistics Education beyond the Introductory Statistics Course*
+
+
+We invite submissions that provide details about learning activities, technologies, resources, or teaching methods that have been used to teach statistics **outside the Intro Stats course**. In addition to discussions related to calculus-based first courses in statistics, “Stat 2”, “MathStat”, and other courses in the statistics curriculum, we encourage submissions related to teaching statistics through internships, undergraduate research experiences, and capstone courses, **as well as efforts to partner with other disciplines** to ensure that the statistics learned in Intro Stats (and other courses) is affecting the data analyses done in these 
+disciplines. 
+
+Sponsored by the SIGMAA on Statistics Education. - 
+
+[http://jointmathematicsmeetings.org/jmm](http://jointmathematicsmeetings.org/jmm)
+
 But Wait, There's More
 ---
 
